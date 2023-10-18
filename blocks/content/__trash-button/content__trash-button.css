@@ -1,5 +1,5 @@
 .content__trash-button {
-    background: url(../../../images/trash-icon.svg);
+    background: url(../../../images/trash-icon.svg) no-repeat;
     border: none;
     background-color: transparent;
     width: 20px;
@@ -7,6 +7,6 @@
 }
 
 .content__trash-button:hover {
-    background: url(../../../images/trash-active-icon.svg);
+    background: url(../../../images/trash-active-icon.svg) no-repeat;
     cursor: pointer;
 }
