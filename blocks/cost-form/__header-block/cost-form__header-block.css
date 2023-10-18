@@ -1,0 +1,10 @@
+.cost-form__header-block {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 951px) {
+    .cost-form__header-block {
+   display: none;
+    }
+  }

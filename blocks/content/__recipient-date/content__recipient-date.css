@@ -1,0 +1,7 @@
+.content__recipient-date {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-top: 4px;
+    width: 100%;
+}

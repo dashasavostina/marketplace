@@ -1,0 +1,9 @@
+.content__prices {
+    display: flex;
+}
+
+@media screen and (max-width: 951px) {
+    .content__prices {
+   align-self: baseline;
+    }
+  }

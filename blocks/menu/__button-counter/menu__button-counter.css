@@ -1,0 +1,16 @@
+.menu__button-counter {
+    border-radius: 50%;
+width: 16px;
+height: 16px;
+background-color: #F55123;
+color: #fff;
+font-size: 10px;
+font-weight: 700;
+line-height: 1.8;
+text-align: center;
+vertical-align: center;
+position: absolute;
+top: -16%;
+right: -4px;
+}
+

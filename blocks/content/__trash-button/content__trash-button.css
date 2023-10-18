@@ -1,0 +1,12 @@
+.content__trash-button {
+    background: url(../../../images/trash-icon.svg);
+    border: none;
+    background-color: transparent;
+    width: 20px;
+    height: 20px;
+}
+
+.content__trash-button:hover {
+    background: url(../../../images/trash-active-icon.svg);
+    cursor: pointer;
+}

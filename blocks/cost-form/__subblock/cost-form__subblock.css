@@ -1,0 +1,4 @@
+.cost-form__subblock {
+  display: flex;
+  justify-content: space-between;
+}

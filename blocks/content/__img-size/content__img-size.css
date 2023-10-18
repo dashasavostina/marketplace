@@ -1,0 +1,19 @@
+.content__img-size {
+    display: none;
+}
+
+@media screen and (max-width: 951px) {
+    .content__img-size {
+   display: block;
+   position: absolute;
+   width: 22px;
+   height: 22px;
+   background-color: #fff;
+   border-radius: 6px;
+   padding: 2px;
+   color: #000;
+   bottom: 4px;
+   left: 4px;
+   text-align: center;
+    }
+  }

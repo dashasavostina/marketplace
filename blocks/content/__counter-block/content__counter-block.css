@@ -1,0 +1,22 @@
+.content__counter-block {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    width: 100px;
+  }
+
+  @media screen and (max-width: 951px) {
+.content__counter-block {
+flex-direction: row;
+padding-top: 12px;
+width: 100%;
+}
+    }
+
+    @media screen and (max-width: 951px) {
+      .content__counter-block_absent {
+  justify-content: flex-end;
+      }
+          }
+
+  

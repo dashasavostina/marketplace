@@ -1,0 +1,19 @@
+.content__header {
+    font-weight: 700;
+    font-size: 28px;
+    color: #000;
+    letter-spacing: -0.28px;
+    list-style: 1.28;
+    margin: 0;
+    padding-top: 34px;
+    padding-bottom: 24.5px;
+    line-height: 1.28;
+}
+
+@media screen and (max-width: 951px) {
+    .content__header {
+   font-size: 20px;
+   letter-spacing: -0.2px;
+   line-height: 1.4;
+    }
+  }

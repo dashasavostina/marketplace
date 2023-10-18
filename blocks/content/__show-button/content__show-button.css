@@ -1,0 +1,8 @@
+.content__show-button {
+    background: url(../../../images/show-icon.svg) no-repeat;
+    border: none;
+    background-color: transparent;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }

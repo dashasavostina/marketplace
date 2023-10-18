@@ -1,0 +1,11 @@
+.content__icons {
+    align-self: flex-end;
+    display: none;
+    column-gap: 16px;
+}
+
+@media screen and (max-width: 951px) {
+    .content__icons {
+   align-self: center;
+    }
+  }

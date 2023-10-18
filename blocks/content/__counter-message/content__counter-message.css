@@ -1,0 +1,14 @@
+.content__counter-message {
+    color: #F55123;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.23;
+    margin: 0;
+}
+
+@media screen and (max-width: 951px) {
+    .content__counter-message {
+   margin-right: 16px;
+   align-self: center;
+    }
+  }

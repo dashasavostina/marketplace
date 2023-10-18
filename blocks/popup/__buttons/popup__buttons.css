@@ -1,0 +1,6 @@
+.popup__buttons {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 8px;
+    padding-bottom: 24px;
+}

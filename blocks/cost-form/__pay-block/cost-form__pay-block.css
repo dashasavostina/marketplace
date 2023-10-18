@@ -1,0 +1,12 @@
+.cost-form__pay-block {
+    border-radius: 8px;
+    background-color: #F6F6FA;
+    padding: 8px 8px 12px 8px;
+}
+
+
+
+@media screen and (max-width: 951px) {
+    .cost-form__pay-block {
+    background-color: #F0ECF4;
+  }}

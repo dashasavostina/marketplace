@@ -1,0 +1,4 @@
+.content__agree {
+    display: flex;
+    flex-direction: column;
+}

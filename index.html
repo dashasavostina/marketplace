@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="pages/index.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Товары и точка</title>
+</head>
+<body class="page">
+  <header class="header">
+    <div class="header__burger-logo">
+       <div class="header__burger">
+        <img class="header__logo-img" src="./images/burger.svg" alt="иконка меню" /> 
+       </div>
+       <a href="#" class="header__logo-text">
+        <p class="header__text">Товары и точка</p>
+       </a>
+    </div>
+    <div class="header__search">
+        <form class="header__search-form">
+            <input
+              type="search"
+              autocomplete="off"
+              class="header__search-input"
+              placeholder="Я ищу..."
+              required
+            />
+            <button type="submit" class="header__search-button"/>
+          </form>
+    </div>
+    <div class="header__buttons">
+        <a class="header__button" href="#">
+            <img class="header__button-icon" src="./images/profile-icon.svg" alt="иконка профиля" />
+            <p class="header__button-text">Профиль</p>
+        </a>
+        <a class="header__button header__button_trash" href="#">
+            <div class="header__button-counter"></div>
+            <img class="header__button-icon" src="./images/basket-icon.svg" alt="иконка корзины" />
+            <p class="header__button-text">Корзина</p>
+        </a>
+    </div>
+    <button class="header__search-button_mobile"></button>
+  </header>
+  <header class="header__mobile">
+    <div class="header__block">
+        <div class="header__burger-mobile">
+            <div class="header__burger-menu"></div>
+            <a class="header__logo-mobile">Товары и точка</a>
+        </div>
+        <button class="header__search-button_mobile"></button>
+    </div>
+  </header>
+  <main class="content">
+<form class="content__basket-forms">
+    <div class="content__left-blocks">
+        <div class="content__basket">
+            <h2 class="content__header">Корзина</h2>
+            <div class="content__all-checkbox">
+        <label class="content__label-check content__label-check_all">
+            <input class="content__checkbox-all" type="checkbox">
+            <span class="content__checkbox-spanall"></span>
+        Выбрать все
+        </label>
+        <div class="content__main-title">
+            <h3 class="content__absent-header_main"></h3>
+        </div>
+        
+        <label type="button" class="content__show-button content__show-button_main"></label>
+            </div>
+            <div class="content__template-items"></div>
+             <template class="content__item">
+                <div class="content__template-block">
+              <div class="content__preview-block">
+               
+
+               
+                <div class="content__link-block">
+                    <label class="content__label-check content__label-check_item">
+                        <input class="content__checkbox" type="checkbox" name="checkbox">
+                        <span class="content__checkbox-span"></span>
+                    </label>
+                    <a class="content__item-link" href="#">
+                        <img class="content__item-img" alt="картинка товара">
+                        <div class="content__img-size"></div>
+                    </a>
+                </div>
+                
+                    <div class="content__info-block">
+                        <p class="content__item-header"></p>
+                        <div class="content__item-description">
+                            <p class="content__text-description"></p>
+                            <p class="content__text-description content__text-description_size"></p>
+                        </div>
+                        <div class="content__item-store">
+                            <p class="content__text-description content__text-description_stock content__text-description_grey">Коледино WB</p>
+                            <div class="content__item-saler">
+                                <p class="content__text-description content__text-description_store content__text-description_grey">ООО Вайлдберриз</p>
+                                <div class="content__about-icon"></div>
+                            </div>
+                            
+                        </div>
+                        <div class="cost-form__tooltip cost-form__tooltip_template">
+                            <p class="cost-form__text cost-form__text_weight"></p>
+                            <p class="cost-form__text cost-form__text_number"></p>
+                            <p class="cost-form__text cost-form__text_address"></p>
+                        </div>
+                    </div>
+                </div>
+        <div class="content__item-options">
+            <div class="content__counter-block">
+                <div class="content__counter">
+                    <button type="button" class="content__counter-button content__counter-button_minus">&minus;</button>
+                    <input min="1" type="number" class="content__counter-result" value="1"></input>
+                    <button type="button" class="content__counter-button content__counter-button_plus">&plus;</button>
+                    </div>
+                    <p class="content__counter-message"></p>
+                    <div class="content__icons">
+                        <button class="content__heart-button"></button>
+                        <button class="content__trash-button"></button>
+                      </div>
+            </div>
+        
+          <div class="content__price-block">
+            <div class="content__prices">
+                <p class="content__price"></p>
+                 <p class="content__unit-price">&nbsp;сом</p>
+            </div>
+            <div class="content__prices">
+            <p class="content__old-price content__old-price_num"></p>
+            <p class="content__old-price">&nbsp;сом</p>
+        </div>
+          </div>
+          </div>
+          
+        </div>
+        </template>
+             
+            </div>
+     
+        <div class="content__absent">
+            <div class="content__absent-head">
+                <h3 class="content__absent-header"></h3>
+                <button type="button" class="content__show-button"></button>
+            </div>
+            <div class="content__template-items content__template-items_absent"></div>
+           
+                   <template class="content__item content__item_absent">
+                    <div class="content__template-block content__template-block_absent">
+                  <div class="content__preview-block">
+                   
+    
+                   
+                    <div class="content__link-block">
+                        <a class="content__item-link" href="#">
+                            <img class="content__item-img content__item-img_absent" alt="картинка товара">
+                        </a>
+                    </div>
+                        <div class="content__info-block content__info-block_absent">
+                            <p class="content__item-header content__item-header_absent grey-color"></p>
+                            <div class="content__item-description">
+                                <p class="content__text-description grey-color"></p>
+                                <p class="content__text-description grey-color content__text-description_size"></p>
+                            </div>
+                        </div>
+                    </div>
+            <div class="content__item-options">
+                <div class="content__counter-block content__counter-block_absent">
+                        <div class="content__icons content__icons_visible">
+                            <button class="content__heart-button"></button>
+                            <button class="content__trash-button"></button>
+                          </div>
+               
+            
+      
+              </div>
+              
+            </div>
+            </template>
+               
+                
+        </div>
+        <div class="content__delivery">
+            <div class="content__delivery-block">
+                <h3 class="content__delivery-header">Способ доставки</h3>
+                <button class="content__delivery-button content__delivery-button_address" type="button">Изменить</button>
+            </div>
+<div class="content__delivery-textblock">
+  <div class="content__delivery-position">
+    <p class="content__delivery-text-position content__delivery-text-position_address">Доставка</p>
+    <div class="content__delivery-address">
+        <p class="content__address-text content__address-text_point"></p>
+        <div class="content__about-point">
+            <div class="content__options  content__options_none">
+                <p class="content__rating content__rating_below"></p>
+            </div>
+            <p class="content__opening-hours content__opening-hours_below"></p>
+        </div>
+        
+
+    </div>
+  </div>
+<div class="content__delivery-blocks">
+    <p class="content__delivery-text-position">Стоимость доставки</p>
+    <p class="content__address-text">Бесплатно</p>
+</div>
+<ul class="content__delivery-dates none">
+    <li class="content__delivery-blocks">
+        <p class="content__delivery-text-position">5—6 февраля</p>
+        <ul class="content__delivery-items ">
+            <li class="content__delivery-item">
+                <img class="content__delivery-img" >
+                <div class="content__img-icon"></div>
+            </li>
+        </ul>
+    </li>
+</ul>
+
+</div>
+<div class="content__free-delivery">
+    <div class="cost-form__text-block">
+      <p class="cost-form__text cost-form__text_grey">Обратная&nbsp;доставка&nbsp;товаров&nbsp;на&nbsp;склад при&nbsp;отказе —&nbsp;</p>
+      <p class="cost-form__text cost-form__text_green cost-form__text_margin">бесплатно</p>
+      <div class="cost-form__tooltip cost-form__tooltip_bottom">
+          <p class="cost-form__text">Если товары вам не подойдут, мы вернем их обратно на склад — это бесплатно</p>
+                  </div>
+    </div>    
+  </div>
+        </div>
+        <div class="content__pay">
+            <div class="content__delivery-block">
+                <h3 class="content__delivery-header">Способ оплаты</h3>
+                <button class="content__delivery-button content__delivery-button_pay" type="button">Изменить</button>
+            </div>
+            <div class="content__pay-block">
+                <div class="content__pay-card">
+                    <img class="cost-form__card-img" alt="иконка карты">
+                    <p class="cost-form__card-number cost-form__card-number_size"></p>
+                </div>
+                <p class="cost-form__card"></p>
+            </div>
+            <p class="content__opening-hours content__opening-hours_grey">Спишем оплату с карты при получении</p>
+        </div>
+        <div class="content__recipient">
+            <div class="content__delivery-block">
+                <h3 class="content__delivery-header">Получатель</h3>
+            </div>
+            <div class="content__recipient-block">
+                <div class="content__recipient-date">
+                    <input class="content__input content__input_name" type="text" placeholder="Имя" />
+                    <label class="content__recipient-label">Имя</label>
+                    <span class="content__recipient-error content__recipient-error_name"></span>
+                </div>
+                <div class="content__recipient-date">
+                    <input class="content__input content__input_surname" type="text" placeholder="Фамилия"/>
+                    <label class="content__recipient-label">Фамилия</label>
+                    <span class="content__recipient-error content__recipient-error_surname"></span>
+                </div>
+            </div>
+            <div class="content__recipient-block">
+                <div class="content__recipient-date">
+                    <input class="content__input content__input_email" type="email" placeholder="Почта"/>
+                    <label class="content__recipient-label">Почта</label>
+                    <span class="content__recipient-error content__recipient-error_email"></span>
+                </div>
+                <div class="content__recipient-date">
+                    <input class="content__input content__input_phone"
+                     type="tel" 
+                     placeholder="Телефон" 
+                     maxlength="30" 
+                   
+                     
+                     />
+                    <label class="content__recipient-label">Телефон</label>
+                    <span class="content__recipient-error content__recipient-error_phone"></span>
+                </div>
+                <div class="content__recipient-date">
+                    <input class="content__input content__input_number" type="email" placeholder="ИНН"/>
+                    <label class="content__recipient-label">ИНН</label>
+                    <span class="content__recipient-error content__recipient-span">Для таможенного оформления</span>
+                </div>
+            </div>
+        </div>
+    </div>
+<div class="content__right-blocks">
+    <div class="cost-form">
+        <div class="cost-form__total">
+        <div class="cost-form__main-cost">
+            <h2 class="cost-form__header">Итого</h2>
+            <div class="cost-form__cost-block">
+                <p class="cost-form__total-cost"></p><p class="cost-form__volute">сом</p>
+            </div> 
+        </div>
+    <div class="cost-form__subblock">
+        <div class="cost-form__position">
+    <p class="cost-form__text-position cost-form__text-position_order"></p>
+    <p class="cost-form__text-position">Скидка</p>
+    <p class="cost-form__text-position">Доставка</p>
+        </div>
+        <div class="cost-form__meaning">
+            <div class="cost-form__cost-block cost-form__cost-block_old">
+                <p class="cost-form__text-position cost-form__old-price"></p>
+                <p class="cost-form__text-position">сом</p>
+            </div>
+            <div class="cost-form__cost-block cost-form__cost-block_old">
+                <p class="cost-form__text-position cost-form__total-disount"></p>
+                <p class="cost-form__text-position">сом</p>
+            </div>
+            <p class="cost-form__text-position">Бесплатно</p>
+        </div>
+    </div>
+    </div>
+    <div class="cost-form__delivery-block">
+        <div class="cost-form__header-block">
+            <h3 class="cost-form__header cost-form__delivery-method">Доставка</h3>
+            <button type="button" class="cost-form__pen-icon cost-form__pen-icon_address"></button>
+        </div>
+        <p class="cost-form__address cost-form__text"></p>
+        <p class="cost-form__date">5–8 фев</p>
+      
+        <div class="cost-form__free-delivery">
+          <div class="cost-form__text-block">
+            <p class="cost-form__text cost-form__text_tooltip cost-form__text_grey">Обратная&nbsp;доставка&nbsp;товаров на&nbsp;склад&nbsp;при&nbsp;отказе — </p>
+            <span class="cost-form__text cost-form__text_green">бесплатно</span>
+            
+            <div class="cost-form__tooltip cost-form__tooltip_top">
+                <p class="cost-form__text">Если товары вам не подойдут, мы вернем их обратно на склад — это бесплатно</p>
+                        </div>
+          </div>    
+        </div>     
+    </div>
+    <div class="cost-form__pay">
+        <div class="cost-form__header-block">
+        <h3 class="cost-form__header">Оплата картой</h3>
+        <button type="button" class="cost-form__pen-icon cost-form__pen-icon_pay"></button>
+       </div>
+       <div class="cost-form__cards">
+        <img class="cost-form__card-img" src="" alt="иконка карты">
+        <p class="cost-form__card-number"></p>
+       </div>
+       <div class="cost-form__pay-block">
+        <label class="cost-form__label-check cost-form__checkbox-text">
+            <input class="content__checkbox-pay" type="checkbox" name="checkboxPay">
+            <span class="content__checkbox-span"></span>
+            Списать оплату сразу
+        </label>
+        <p class="cost-form__checkbox-text">Спишем оплату с карты при получении</p>
+       </div>
+    </div>
+    <div class="content__agree">
+        <button class="cost-form__button" type="submit">Заказать</button>
+        <div class="cost-form__agree-block">
+            <p class="cost-form__agree-text">Соглашаюсь <a class="cost-form__agree-text cost-form__agree-text_link" href="#">с правилами пользования торговой площадкой</a> и <a class="cost-form__agree-text cost-form__agree-text_link" href="#">возврата</a></p>
+        </div>
+    </div>
+   
+    
+    </div>
+</div>
+
+</form>
+</section>
+  </main>
+  <footer class="footer">
+    <p class="footer__text">&copy;&nbsp;2023&nbsp;ООО&nbsp;&laquo;Товары и точка&raquo;</p>
+  </footer>
+  <section class="menu__mobile">
+        <a href="#" class="menu__link">
+            <img src="images/main.svg">
+        </a>
+        <a class="menu__link">
+            <img class="menu__img" src="images/catalog.svg">
+        </a>
+        <a class="menu__link">
+            <img src="images/cart.svg">
+            <div class="menu__button-counter"></div>
+        </a>
+        <a class="menu__link">
+            <img src="images/favorites.svg">
+        </a>
+        <a class="menu__link">
+            <img  src="images/profile-icon.svg">
+        </a>
+  </section>
+  <section class="popup popup_type_address">
+    <div class="popup__container">
+        <div class="popup__header">
+            <h3 class="popup__title">Способ доставки</h3>
+            <button type="button" class="popup__close"></button>
+        </div>
+        <form class="popup__form">
+            <div class="popup__form-block">
+                <div class="popup__buttons">
+                    <button class="popup__button popup__button_point">В пункт выдачи</button>
+                    <button class="popup__button popup__button_courier">Курьером</button>
+                </div>
+                <h4 class="popup__subtitle">Мои адреса</h4>
+                <div class="popup__list">
+                    <template class="popup__address-list">
+                        <div class="popup__positions"> 
+                        <label class="popup__radio">
+                            <input type="radio" name="address_point">
+                            <span class="popup__radio-span"></span>
+                            <div class="popup__position">
+                                <p class="popup__name-position"></p>
+                                <div class="content__about-point content__about-point_list">
+                                    <div class="content__options">
+                                        <p class="content__rating"></p>
+                                    </div>
+                                    <p class="content__opening-hours content__opening-hours_popup cost-form__checkbox-text_none">Пункт выдачи</p>
+                                    <p class="content__opening-hours content__opening-hours_popup">Пункт выдачи</p>
+                                </div>
+                            </div>
+                            
+                        </label>
+                        <div class="popup__trash"></div>
+                        </div>
+                    </template>
+                </div>
+                <div class="popup__list_curier">
+                    <template class="popup__curier-list">
+                        <div class="popup__positions"> 
+                        <label class="popup__radio">
+                            <input type="radio" name="address_curier">
+                            <span class="popup__radio-span"></span>
+                            <div class="popup__position">
+                                <p class="popup__name-position"></p>
+                            </div>
+                        </label>
+                        <div class="popup__trash"></div>
+                        </div>
+                    </template>
+                </div>
+                    
+                 
+                
+               
+            </div>
+            <button class="popup__submit" type="submit">Выбрать</button> 
+        </form>
+    </div>
+  </section>
+  <section class="popup popup_type_card">
+    <div class="popup__container popup__container_card">
+        <div class="popup__header">
+            <h3 class="popup__title">Способ оплаты</h3>
+            <button type="button" class="popup__close"></button>
+        </div>
+        <form class="popup__form">
+            <div class="popup__form-block">
+                <div class="popup__cards-list">
+                    <template class="popup__card-list">
+                        <div class="popup__positions"> 
+                            <label class="popup__radio">
+                                <input checked type="radio" name="cards">
+                                <span class="popup__radio-span"></span>
+                                <div class="popup__position popup__position_row">
+                                    <img class="popup__card-img">
+                                    <p class="popup__card-number"></p>
+                                    <p class="cost-form__card-date cost-form__checkbox-text_none"></p>
+                                </div>
+                            </label>
+                            </div>
+                    </template>
+                </div>
+            </div>
+            <button class="popup__submit popup__submit_card" type="submit">Выбрать</button> 
+        </form>
+    </div>
+  </section>
+
+  <script src="scripts/utils/constants.js"></script>
+  <script src="scripts/validate.js"></script>
+  <script src="scripts/index.js"></script>
+</body>
+</html>

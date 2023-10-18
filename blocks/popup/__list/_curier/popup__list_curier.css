@@ -1,0 +1,4 @@
+.popup__list_curier {
+    display: flex;
+    flex-direction: column;
+}

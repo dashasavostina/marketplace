@@ -1,0 +1,14 @@
+.content__free-delivery {
+    display: flex;
+  }
+
+  .content__free-delivery:before {
+    content: "";
+    display: block;
+    background: url(../../../images/done-check.svg) no-repeat;
+    width: 22px;
+    height: 22px;
+    float: left;
+    background-size: 100%;
+    margin-top: 8px;
+}

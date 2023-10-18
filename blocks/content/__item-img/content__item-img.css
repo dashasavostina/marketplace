@@ -1,0 +1,14 @@
+.content__item-img {
+    width: 72px;
+    height: 96px;
+    display: block;
+    border-radius: 8px;
+    position: relative;
+}
+
+@media screen and (max-width: 951px) {
+    .content__item-img {
+   width: 80px;
+   height: 106px;
+    }
+  }

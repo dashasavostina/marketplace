@@ -1,0 +1,4 @@
+.content__link-block {
+  display: flex;
+  height: min-content;
+}

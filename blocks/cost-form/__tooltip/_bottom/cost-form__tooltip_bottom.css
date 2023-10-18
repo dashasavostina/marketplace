@@ -1,0 +1,10 @@
+.cost-form__tooltip_bottom {
+    top: 112%;
+    left: 53%;
+}
+
+@media screen and (max-width: 1216px) {
+    .cost-form__tooltip_bottom {
+      left: 92%;
+    }
+  }

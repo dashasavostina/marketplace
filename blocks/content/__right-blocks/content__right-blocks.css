@@ -1,0 +1,26 @@
+.content__right-blocks {
+    display: flex;
+    flex-direction: column;
+max-width: 429px;
+width: 100%;
+}
+
+@media screen and (max-width: 1216px) {
+    .content__right-blocks {
+      max-width: 303px;
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 1003px) {
+    .content__right-blocks {
+      max-width: 250px;
+    }
+  }
+
+  @media screen and (max-width: 951px) {
+    .content__right-blocks {
+      width: 100%;
+      max-width: 100%;
+    }
+  }

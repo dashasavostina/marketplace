@@ -1,0 +1,12 @@
+.content__about-icon {
+    background: url(../../../images/about-icon.svg) no-repeat;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-top: 2px;
+}
+
+.content__about-icon:hover + .cost-form__tooltip {
+    display: block;
+} 

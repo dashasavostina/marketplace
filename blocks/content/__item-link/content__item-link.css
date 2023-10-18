@@ -1,0 +1,10 @@
+.content__item-link {
+    text-decoration: none;
+
+}
+
+@media screen and (max-width: 951px) {
+    .content__item-link {
+  position: relative;
+    }
+  }

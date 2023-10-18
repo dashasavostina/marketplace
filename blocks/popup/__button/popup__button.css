@@ -1,0 +1,17 @@
+.popup__button {
+    background-color: #fff;
+    border: 2px solid rgba(203, 17, 171, 0.15)  ;
+    border-radius: 20px;
+font-size: 13px;
+font-weight: 700;
+color: #000;
+line-height: 1.23;
+width: 100%;
+height: 36px;
+padding: 0;
+cursor: pointer;
+}
+
+.popup__button_focus {
+    border: 2px solid #CB11AB;
+}

@@ -1,0 +1,10 @@
+.popup__trash {
+    background: url(../../../images/trash-icon.svg) no-repeat;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.popup__trash:hover {
+    background: url(../../../images/activetrash-icon.svg);
+}

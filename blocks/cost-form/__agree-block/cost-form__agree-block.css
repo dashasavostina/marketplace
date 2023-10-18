@@ -1,0 +1,12 @@
+.cost-form__agree-block {
+  display: flex;
+  column-gap: 8px;
+}
+
+.cost-form__agree-block:before {
+  content: "";
+  display: block;
+  background: url(../../../images/agree-icon.svg) no-repeat;
+  width: 17px;
+  height: 24px;
+}

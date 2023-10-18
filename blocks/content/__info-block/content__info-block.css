@@ -1,0 +1,11 @@
+.content__info-block {
+  
+    width: 100%;
+}
+
+@media screen and (min-width: 951px) {
+    .content__info-block {
+        max-width: 275px;
+
+    }
+  }

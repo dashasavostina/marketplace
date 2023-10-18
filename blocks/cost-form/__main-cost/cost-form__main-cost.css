@@ -1,0 +1,4 @@
+.cost-form__main-cost {
+    display: flex;
+    justify-content: space-between;
+}

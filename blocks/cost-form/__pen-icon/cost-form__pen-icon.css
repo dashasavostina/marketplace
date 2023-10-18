@@ -1,0 +1,8 @@
+.cost-form__pen-icon {
+    background: url(../../../images/pen-icon.svg) no-repeat;
+    width: 20px;
+    height: 20px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}

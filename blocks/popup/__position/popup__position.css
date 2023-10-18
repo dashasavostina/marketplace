@@ -1,0 +1,4 @@
+.popup__position {
+    display: flex;
+    flex-direction: column;
+}

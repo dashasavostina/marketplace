@@ -1,0 +1,4 @@
+.content__about-point {
+    display: flex;
+    column-gap: 8px;
+}

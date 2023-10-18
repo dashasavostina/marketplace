@@ -1,0 +1,19 @@
+.content__img-icon {
+  position: absolute;
+  border-radius: 50%;
+  min-width: 16px;
+  width: min-content;
+  height: 16px;
+  background-color: #f55123;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 1.8;
+  top: -17%;
+  right: -8%;
+  text-align: center;
+  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

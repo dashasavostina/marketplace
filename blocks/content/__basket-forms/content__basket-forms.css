@@ -1,0 +1,14 @@
+.content__basket-forms {
+    display: flex;
+    column-gap: 32px;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+@media screen and (max-width: 951px) {
+    .content__basket-forms {
+      flex-direction: column;
+      row-gap: 12px;
+    }
+  }

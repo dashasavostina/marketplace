@@ -1,0 +1,12 @@
+.content__options {
+    display: flex;
+column-gap: 4px;
+}
+
+.content__options:before {
+    content: "";
+    background: url(../../../images/star-icon.svg) no-repeat;
+    width: 12px;
+    height: 12px;
+    align-self: center;
+}

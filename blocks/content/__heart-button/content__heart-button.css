@@ -1,0 +1,12 @@
+.content__heart-button {
+    background: url(../../../images/heart-icon.svg);
+    border: none;
+    background-color: transparent;
+    width: 20px;
+    height: 20px;
+}
+
+.content__heart-button:hover {
+    background: url(../../../images/heart-active-icon.svg);
+    cursor: pointer;
+}

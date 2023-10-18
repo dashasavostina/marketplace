@@ -1,0 +1,4 @@
+.content__preview-block {
+    display: flex;
+    gap: 16px;
+}

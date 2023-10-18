@@ -1,0 +1,22 @@
+.cost-form__free-delivery {
+  margin-top: 12px;
+  display: flex;
+  background-color: rgba(246, 246, 250, 1);
+  border-radius: 8px;
+  padding: 0px 8px 12px 8px;
+}
+
+.cost-form__free-delivery::before {
+  content: "";
+  display: block;
+  background: url(../../../images/done-check.svg) no-repeat;
+  width: 22px;
+ height: 22px;
+ float: left;
+ background-size: 100%;
+margin-top: 8px;
+}
+@media screen and (max-width: 951px) {
+  .cost-form__free-delivery {
+  background-color: #F0ECF4;
+}}

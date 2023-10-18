@@ -1,0 +1,10 @@
+.content__delivery-button {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.5;
+    border: none;
+    background-color: transparent;
+    color: #CB11AB;
+    cursor: pointer;
+    padding: 0;
+}

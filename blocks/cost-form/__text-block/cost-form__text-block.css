@@ -1,0 +1,14 @@
+.cost-form__text-block {
+    padding-left: 8px;
+    position: relative;
+    min-width: 202px;
+  
+}
+
+@media screen and (max-width: 1216px) {
+    .cost-form__text-block {
+    
+      max-width: 155px;
+    }
+  }
+

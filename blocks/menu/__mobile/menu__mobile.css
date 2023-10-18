@@ -1,0 +1,12 @@
+.menu__mobile {
+    background-color: #fff;
+    padding: 14px 13px 14px;
+    display: none;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 951px) {
+    .menu__mobile {
+    display: flex;
+    }
+  }

@@ -1,0 +1,17 @@
+.cost-form__date {
+    color: rgba(203, 17, 171, 1);
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.23;
+    position: relative;
+    width: content-box;
+    margin: 0;
+height: 17px;
+align-self: flex-start;
+border-bottom: 1px dashed rgba(203, 17, 171, 0.20);
+}
+
+@media screen and (max-width: 951px) {
+    .cost-form__date {
+    display: none;
+  }}

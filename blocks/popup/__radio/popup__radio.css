@@ -1,0 +1,48 @@
+.popup__radio input[type="radio"] {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  display: block;
+  width: 0;
+  height: 0;
+}
+.popup__radio span {
+  display: inline-block;
+  position: relative;
+
+  line-height: 20px;
+}
+
+.popup__radio span:before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  transition: background 0.3s ease;
+  border: solid 1px rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  background-color: transparent;
+  box-sizing: border-box;
+}
+
+/* Checked */
+.popup__radio input[type="radio"]:checked + span:before {
+  content: url(../../../images/radio-done.svg);
+  border: none;
+  width: 20px;
+  height: 20px;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+}
+
+.popup__radio {
+  cursor: pointer;
+  position: relative;
+  user-select: none;
+  display: flex;
+  column-gap: 30px;
+}

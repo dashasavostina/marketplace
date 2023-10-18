@@ -1,0 +1,22 @@
+.content__template-block {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.content__template-block:hover {
+    cursor: pointer;
+}
+
+.content__template-block:hover .content__icons {
+    display: flex;
+  }
+ 
+  @media screen and (max-width: 951px) {
+    .content__template-block {
+   flex-direction: column;
+   border-bottom: 1px solid rgba(0, 0, 0, 0.10);
+   padding-bottom: 16px;
+    }
+  }

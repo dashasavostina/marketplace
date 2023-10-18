@@ -1,0 +1,36 @@
+.content__item-header {
+    font-size: 16px;
+    color: #000;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0;
+
+}
+
+@media screen and (max-width: 951px) {
+    .content__item-header {
+   font-size: 14px;
+   padding-top: 26px;
+
+    }
+  }
+
+  @media screen and (max-width: 832px) {
+    .content__item-header {
+   text-overflow: ellipsis;
+   overflow: hidden;
+   -webkit-line-clamp: 2;
+   display: -webkit-box;
+   -webkit-box-orient: vertical;
+    }
+  } 
+
+  @media screen and (max-width: 951px) {
+    .content__item-header_absent {
+   padding-top: 0;
+
+    }
+  }
+
+
+  

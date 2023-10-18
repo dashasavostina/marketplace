@@ -1,0 +1,13 @@
+.content__recipient {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 16px;
+    padding: 16px 24px 24px;
+}
+
+@media screen and (max-width: 951px) {
+    .content__recipient {
+      padding: 16px 16px 24px;
+    }
+  }

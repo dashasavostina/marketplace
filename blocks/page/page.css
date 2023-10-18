@@ -1,0 +1,10 @@
+.page {
+    background-color: #6725A8;
+    margin: 0 auto;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-style: normal;
+    max-width: 1440px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}

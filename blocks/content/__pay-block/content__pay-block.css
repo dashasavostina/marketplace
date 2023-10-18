@@ -1,0 +1,6 @@
+
+.content__pay-block {
+    display: flex;
+    column-gap: 12px;
+    padding-bottom: 8px;
+}

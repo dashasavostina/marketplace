@@ -1,0 +1,13 @@
+.cost-form__text_green {
+    color: #0CB477;
+    border-bottom: 1px dashed rgba(12, 180, 119, 0.20);
+    height: min-content;
+    cursor: pointer;
+    width: 62px;
+ 
+}
+
+.cost-form__text_green:hover + .cost-form__tooltip {
+    display: block;
+} 
+

@@ -1,0 +1,4 @@
+.popup__address-list {
+    display: flex;
+    justify-content: space-between;
+}
