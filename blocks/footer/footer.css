@@ -1,11 +1,16 @@
 .footer {
     background-color: rgba(103, 37, 168, 1);
-    padding: 24px;
+    padding: 24px ;
 display: flex;
 justify-content: center;
 align-items: center;
 }
 
+@media screen and (max-width: 951px) {
+    .footer {
+   padding-bottom: 80px;
+    }
+  }
 .footer__text {
     font-size: 13px;
     font-weight: 400;
