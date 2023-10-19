@@ -143,6 +143,7 @@
 @import url(../blocks/cost-form/__free-delivery/cost-form__free-delivery.css);
 @import url(../blocks/cost-form/__header-block/cost-form__header-block.css);
 @import url(../blocks/cost-form/__header/cost-form__header.css);
+@import url(../blocks/cost-form/__delivery-method/cost-form__delivery-method.css);
 @import url(../blocks/cost-form/__label-check/cost-form__label-check.css);
 @import url(../blocks/cost-form/__main-cost/cost-form__main-cost.css);
 @import url(../blocks/cost-form/__meaning/cost-form__meaning.css);
