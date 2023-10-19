@@ -10,5 +10,7 @@
     .content__counter-message {
    margin-right: 16px;
    align-self: center;
+   display: block;
+   flex-grow: 1;
     }
   }

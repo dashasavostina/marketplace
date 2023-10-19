@@ -6,3 +6,9 @@
     border-radius: 16px;
    
 }
+
+@media screen and (max-width: 951px) {
+    .content__pay {
+padding: 16px 16px 24px;
+    }
+  }

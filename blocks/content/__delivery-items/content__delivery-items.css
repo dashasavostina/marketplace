@@ -1,7 +1,13 @@
 .content__delivery-items {
-    display: flex;
-    column-gap: 8px;
-   list-style-type: none;
-   padding: 0;
-   margin: 0;
+  display: flex;
+  column-gap: 8px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+@media screen and (max-width: 951px) {
+  .content__delivery-items {
+    margin-top: 12px;
+  }
 }

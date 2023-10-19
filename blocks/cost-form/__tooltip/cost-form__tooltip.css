@@ -7,14 +7,14 @@
     0px 2px 10px 0px rgba(0, 0, 0, 0.15);
   align-self: center;
   position: absolute;
-  top: 103%;
-  left: 0;
+  top: 88%;
+  left: 8%;
   background-color: #fff;
 }
 
 @media screen and (max-width: 1216px) {
   .cost-form__tooltip_top {
-    width: 240px;
+
     left: -18%;
   }
 }

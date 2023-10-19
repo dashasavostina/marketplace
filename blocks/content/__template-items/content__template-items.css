@@ -1,6 +1,12 @@
 .content__template-items {
-    padding-top: 11px;
+    padding-top: 12px;
     display: flex;
     flex-direction: column;
     row-gap: 20px;
 }
+
+@media screen and (max-width: 951px) {
+    .content__template-items {
+row-gap: 12px;
+    }
+  }

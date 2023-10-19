@@ -5,3 +5,11 @@
     line-height: 1.33;
     letter-spacing: -0.24px;
 }
+
+@media screen and (max-width: 951px) {
+    .cost-form__total-cost {
+font-size: 20px;
+letter-spacing: -0.2px;
+line-height: 1.4;
+    }
+  }

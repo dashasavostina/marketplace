@@ -7,13 +7,26 @@
     flex-direction: column;
     row-gap: 24px;
     box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.30), 0px 2px 10px 0px rgba(0, 0, 0, 0.15);
+    width: 429px;
+    box-sizing: border-box;
 }
+
+@media screen and (max-width: 1216px) {
+    .cost-form {
+    max-width: 303px;
+    width: 100%;
+    }
+  }
 
 @media screen and (max-width: 951px) {
     .cost-form {
     box-shadow: none;
     background-color:#F6F6FA;
     margin-top: 0;
-    padding-top: 14px;
+    padding-top: 12px;
+    max-width: 100%;
+    width: 100%;
+    row-gap: 16px;
+    padding: 12px 16px 39px;
     }
   }

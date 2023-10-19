@@ -3,3 +3,9 @@
     justify-content: space-between;
     padding-bottom: 16px;
 }
+
+@media screen and (max-width: 951px) {
+    .content__delivery-block {
+   padding-bottom: 8px;
+    }
+  }

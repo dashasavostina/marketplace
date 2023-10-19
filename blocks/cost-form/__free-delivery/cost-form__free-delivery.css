@@ -1,9 +1,13 @@
 .cost-form__free-delivery {
   margin-top: 12px;
-  display: flex;
   background-color: rgba(246, 246, 250, 1);
   border-radius: 8px;
-  padding: 0px 8px 12px 8px;
+  padding: 8px 8px 12px 8px;
+position: relative;
+  font-size: 13px;
+  line-height: 1.23;
+  font-weight: 400;
+
 }
 
 .cost-form__free-delivery::before {
@@ -14,9 +18,11 @@
  height: 22px;
  float: left;
  background-size: 100%;
-margin-top: 8px;
+margin-top: 6px;
+margin-right: 8px;
 }
 @media screen and (max-width: 951px) {
   .cost-form__free-delivery {
   background-color: #F0ECF4;
+  margin-top: 0;
 }}

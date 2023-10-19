@@ -1,8 +1,6 @@
 .content__right-blocks {
     display: flex;
     flex-direction: column;
-max-width: 429px;
-width: 100%;
 }
 
 @media screen and (max-width: 1216px) {

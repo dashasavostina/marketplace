@@ -1,5 +1,8 @@
 .content__free-delivery {
-    display: flex;
+    font-size: 13px;
+    line-height: 1.23;
+    font-weight: 400;
+    align-items: center;
   }
 
   .content__free-delivery:before {
@@ -10,5 +13,5 @@
     height: 22px;
     float: left;
     background-size: 100%;
-    margin-top: 8px;
+    margin-right: 8px;
 }

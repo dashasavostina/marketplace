@@ -5,3 +5,9 @@
     line-height: 1.69;
     letter-spacing: -0.2px;
 }
+
+@media screen and (max-width: 951px) {
+    .cost-form__volute {
+   font-size: 18px;
+    }
+  }
