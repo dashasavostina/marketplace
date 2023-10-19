@@ -83,6 +83,8 @@ function showPopup(popup) {
 const closePopup = function(popup)  {
     popup.classList.remove('popup_opened');
     document.removeEventListener('keydown', closeByEscape);
+    document.querySelectorAll("input[type='radio']").
+  forEach(el => el.checked = false);
   }
 
   const handleClickByCloseButton = (evt) => {
@@ -301,7 +303,7 @@ function createProduct(products) {
   productSize.textContent = "Размер: " + products.size;
   if (!products.size) {
     product.querySelector('.content__img-size').style.display = "none";
-  }
+    product.querySelector('.content__text-description_size').style.display = "none";  }
   productSizeMobile.textContent = products.size;
   productPrice.textContent = products.price;
   productOldPrice.textContent = products.oldPrice;
