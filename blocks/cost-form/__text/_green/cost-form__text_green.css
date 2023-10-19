@@ -7,7 +7,7 @@
  
 }
 
-.cost-form__text_green:hover + .cost-form__tooltip {
+.cost-form__text_green:hover + .cost-form__tooltip_top {
     display: block;
 } 
 

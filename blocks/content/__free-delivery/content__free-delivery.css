@@ -3,6 +3,7 @@
     line-height: 1.23;
     font-weight: 400;
     align-items: center;
+    position: relative;
   }
 
   .content__free-delivery:before {

@@ -147,6 +147,8 @@ buttonSubmitCard.addEventListener('click', function(e) {
   closePopup(cardPopup);
   for (let radio of document.querySelectorAll('input[type=radio][name=cards]'))
   if (radio.checked) {
+    document.querySelector('.content__pay-block').classList.remove('none');
+    document.querySelector('.cost-form__cards').classList.remove('none');
   Array.from(document.querySelectorAll('.cost-form__card-img')).map((card) => {
 card.src = radio.nextElementSibling.nextElementSibling.children[0].src;
   });
@@ -257,7 +259,9 @@ function createAbsentProduct(products) {
   productImg.src = products.img;
   productName.textContent = products.name;
   productColor.textContent = products.color;
-  productSize.textContent = products.size;
+  productSize.textContent = "Размер: " + products.size;
+  if (!products.size) {
+    product.querySelector('.content__text-description_size').style.display = "none";  }
   product
   .querySelector('.content__heart-button')
   .addEventListener('click', (evt) => {

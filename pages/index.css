@@ -92,6 +92,7 @@
 @import url(../blocks/content/__old-price/content__old-price.css);
 @import url(../blocks/content/__opening-hours/content__opening-hours.css);
 @import url(../blocks/content/__opening-hours/_popup/content__opening-hours_popup.css);
+@import url(../blocks/content/__opening-hours/_grey/content__opening-hours_grey.css);
 @import url(../blocks/content/__options/content__options.css);
 @import url(../blocks/content/__options/_none/content__options_none.css);
 @import url(../blocks/content/__pay-block/content__pay-block.css);
@@ -142,6 +143,7 @@
 @import url(../blocks/cost-form/__done-icon/cost-form__done-icon.css);
 @import url(../blocks/cost-form/__free-delivery/cost-form__free-delivery.css);
 @import url(../blocks/cost-form/__header-block/cost-form__header-block.css);
+@import url(../blocks/cost-form/__header-block/_pay/cost-form__header-block_pay.css);
 @import url(../blocks/cost-form/__header/cost-form__header.css);
 @import url(../blocks/cost-form/__delivery-method/cost-form__delivery-method.css);
 @import url(../blocks/cost-form/__label-check/cost-form__label-check.css);

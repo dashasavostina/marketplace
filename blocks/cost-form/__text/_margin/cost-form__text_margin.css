@@ -2,3 +2,7 @@
     margin-bottom: 0;
     margin-left: 5px;
 }
+
+.cost-form__text_margin:hover + .cost-form__tooltip_bottom {
+    display: block;
+  }
