@@ -10,11 +10,19 @@
   top: 88%;
   left: 8%;
   background-color: #fff;
+  z-index: 35;
 }
 
 @media screen and (max-width: 1216px) {
   .cost-form__tooltip_top {
 
     left: -13%;
+  }
+}
+
+@media screen and (max-width: 951px) {
+  .cost-form__tooltip_top {
+
+    left: 9%;
   }
 }

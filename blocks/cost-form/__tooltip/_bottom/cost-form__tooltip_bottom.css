@@ -10,3 +10,10 @@
       left: 36%;
     }
   }
+
+  @media screen and (max-width: 951px) {
+    .cost-form__tooltip_bottom {
+      top: 130%;
+      left: 8%;
+    }
+  }
