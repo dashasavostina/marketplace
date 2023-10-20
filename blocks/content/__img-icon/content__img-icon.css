@@ -1,6 +1,7 @@
 .content__img-icon {
   position: absolute;
-  border-radius: 50%;
+  border-radius: 16px;
+  padding: 0 4px;
   min-width: 16px;
   width: min-content;
   height: 16px;

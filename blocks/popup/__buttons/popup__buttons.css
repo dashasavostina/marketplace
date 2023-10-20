@@ -4,3 +4,9 @@
     column-gap: 8px;
     padding-bottom: 24px;
 }
+
+@media screen and (max-width: 951px) {
+    .popup__buttons {
+  padding-bottom: 26px;
+    }
+  }

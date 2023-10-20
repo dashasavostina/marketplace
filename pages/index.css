@@ -7,6 +7,7 @@
 @import url(../blocks/content/content.css);
 @import url(../blocks/footer/footer.css);
 @import url(../blocks/popup/popup.css);
+@import url(../blocks/popup/_type/popup__type_address.css);
 @import url(../blocks/popup/__container/popup__container.css);
 @import url(../blocks/popup/_opened/popup_opened.css);
 @import url(../blocks/popup/__header/popup__header.css);
@@ -117,11 +118,15 @@
 @import url(../blocks/content/__template-block/content__template-block.css);
 @import url(../blocks/content/__template-items/content__template-items.css);
 @import url(../blocks/content/__template/_close/content__template_close.css);
+@import url(../blocks/content/__tooltip-block/content__tooltip-block.css);
+@import url(../blocks/content/__tooltip-block/end/content__tooltip-block_end.css);
 @import url(../blocks/content/__text-description/content__text-description.css);
 @import url(../blocks/content/__text-description/_grey/content__text-description_grey.css);
 @import url(../blocks/content/__text-description/_size/content__text-description_size.css);
 @import url(../blocks/content/__trash-button/content__trash-button.css);
 @import url(../blocks/content/__unit-price/content__unit-price.css);
+@import url(../blocks/content/__grey-text/content__grey-text.css);
+@import url(../blocks/content/__grey-text/_black/content__grey-text_black.css);
 @import url(../blocks/cost-form/cost-form.css);
 @import url(../blocks/cost-form/__agree-block/cost-form__agree-block.css);
 @import url(../blocks/cost-form/__agree-text/cost-form__agree-text.css);
@@ -166,6 +171,7 @@
 @import url(../blocks/cost-form/__tooltip/cost-form__tooltip.css);
 @import url(../blocks/cost-form/__tooltip/_bottom/cost-form__tooltip_bottom.css);
 @import url(../blocks/cost-form/__tooltip/_template/cost-form__tooltip_template.css);
+@import url(../blocks/cost-form/__tooltip/_discount/cost-form__tooltip_discount.css);
 @import url(../blocks/cost-form/__total-cost/cost-form__total-cost.css);
 @import url(../blocks/cost-form/__total/cost-form__total.css);
 @import url(../blocks/cost-form/__volute/cost-form__volute.css);

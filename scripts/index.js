@@ -34,8 +34,8 @@ totalCost.textContent = 0;
 const buttonSubmit = document.querySelector('.popup__submit');
 const buttonSubmitCard = document.querySelector('.popup__submit_card');
 
-const templateAddress = document.querySelector('.popup__address-list').content;
-const templateCurierAddress = document.querySelector('.popup__curier-list').content;
+const templateAddress = document.querySelector('.popup__address-list').content.querySelector('.popup__positions');
+const templateCurierAddress = document.querySelector('.popup__curier-list').content.querySelector('.popup__positions');
 const templateCards = document.querySelector('.popup__card-list').content;
 const templateProducts = document.querySelector('.content__item').content.querySelector('.content__template-block');
 const templateAbsentProducts = document.querySelector('.content__item_absent').content.querySelector('.content__template-block_absent');
@@ -182,7 +182,9 @@ function createCurierAddress(address) {
   const position = templateCurierAddress.cloneNode(true);
   let namePosition = position.querySelector('.popup__name-position');
   namePosition.textContent = address.name;
-
+position.querySelector('.popup__trash').addEventListener('click', () => {
+  position.remove();
+})
   return position;
 }
 
@@ -322,6 +324,12 @@ function createProduct(products) {
   product.querySelector('.content__about-icon').addEventListener('mouseout', () => {
     product.querySelector('.cost-form__tooltip').style.display = "none";
   })
+  product.querySelector('.content__old-prices').addEventListener('mouseover', () => {
+    product.querySelector('.cost-form__tooltip_discount').style.display = "flex";
+  });
+  product.querySelector('.content__old-prices').addEventListener('mouseout', () => {
+    product.querySelector('.cost-form__tooltip_discount').style.display = "none";
+  })
   const buttonPlus = product.querySelector('.content__counter-button_plus');
   buttonPlus.addEventListener('click', () => {
     if (productResultCount.value < 1) {
@@ -346,7 +354,7 @@ totalDiscount.textContent = parseInt(totalSum())  - parseInt(totalOldSum());
   });
   const buttonMinus = product.querySelector('.content__counter-button_minus');
   buttonMinus.addEventListener('click', () => {
-    if (productResultCount.value < 2) {
+    if (productResultCount.value < 1) {
       buttonMinus.disabled = true;
     } else {
       buttonMinus.disabled = false;
@@ -502,6 +510,7 @@ allCheckbox.addEventListener('change', function(e) {
   updateSum();
 });
 
+// функция отображения иконок товаров в способе доставки
 function imagePosition() {
   const checkboxes = Array.from(productsList.querySelectorAll('.content__checkbox'));
   const counters = Array.from(productsList.querySelectorAll('.content__counter-result'));
@@ -535,48 +544,30 @@ function imagePosition() {
  positionElement.appendChild(image);
  positionElement.appendChild(count);
  document.querySelector('.content__delivery-dates').classList.remove('none');
- deliveryItemsContainer.appendChild(positionElement);
-   
-         
-  
-      if (index === 1 && counters[index].value < 184) {
-// Создаем новый элемент для каждой позиции и добавляем его в контейнер
-const positionElement = document.createElement('li');
-positionElement.classList.add('content__delivery-item');
-const image = document.createElement('img');
-image.classList.add('content__delivery-img');
-const count = document.createElement('div');
-count.classList.add('content__img-icon');
-image.src = positionInfo.imgSrc;
-count.textContent = positionInfo.quantity;
-positionElement.appendChild(image);
-positionElement.appendChild(count);
-document.querySelector('.content__delivery-dates').classList.remove('none');
-deliveryItemsContainer.appendChild(positionElement);
-      }
-      
+ deliveryItemsContainer.appendChild(positionElement); 
+ if (index === 1 && counters[index].value <= 184) {
+  document.querySelector('.content__delivery-text-position_later').classList.add('none');
+ }     
 
       if (index === 1 && counters[index].value > 184) {
-        const positionElement = document.createElement('li');
-        positionElement.classList.add('content__delivery-item');
+        const positionNewElement = document.createElement('li');
+        positionNewElement.classList.add('content__delivery-item');
         const image = document.createElement('img');
         image.classList.add('content__delivery-img');
-        const count = document.createElement('div');
-      count.classList.add('content__img-icon');
+        const countNew = document.createElement('div');
+      countNew.classList.add('content__img-icon');
       image.src = positionInfo.imgSrc;
-      count.textContent = positionInfo.quantity - 184;
-        positionElement.appendChild(image);
-        positionElement.appendChild(count);
-        document.querySelector('.content__delivery-text-position_later').classList.remove('none');
-deliveryItemsContainerLater.appendChild(positionElement);
+      countNew.textContent = positionInfo.quantity - 184;
+      count.textContent = 184;
+        positionNewElement.appendChild(image);
+        positionNewElement.appendChild(countNew);
+        
+deliveryItemsContainerLater.appendChild(positionNewElement);
+document.querySelector('.content__delivery-text-position_later').classList.remove('none');
       }
     }
   });
 }
-
-
-
-
 
 // функция отображения кол-ва товара на иконке корзины
 function updateCounterTrash() {
@@ -602,7 +593,7 @@ else {
 
 checkboxPay.addEventListener('click', updateSum);
 
-// функция отображения тултипов у блока с товарами
+// функция отображения тултипов о продавце
 Array.from(productsList.querySelectorAll('.content__template-block')).forEach(product => {
   product.style.position = "relative";
   product.querySelector('.cost-form__tooltip_template').style.position = "absolute";

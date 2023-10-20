@@ -125,9 +125,19 @@
                 <p class="content__price"></p>
                  <p class="content__unit-price">&nbsp;сом</p>
             </div>
-            <div class="content__prices">
+            <div class="content__prices content__old-prices">
             <p class="content__old-price content__old-price_num"></p>
             <p class="content__old-price">&nbsp;сом</p>
+        </div>
+        <div class=" cost-form__tooltip_discount">
+            <div class="content__tooltip-block">
+                <p class="content__grey-text">Скидка 55%</p>
+                <p class="content__grey-text">Скидка покупателя 10%</p>
+            </div>
+            <div class="content__tooltip-block content__tooltip-block_end">
+                <p class="content__grey-text content__grey-text_black">−300 сом</p>
+                <p class="content__grey-text content__grey-text_black">−30 сом</p>
+            </div>
         </div>
           </div>
           </div>
@@ -255,24 +265,24 @@
             </div>
             <div class="content__recipient-block">
                 <div class="content__recipient-date">
-                    <input class="content__input content__input_name" type="text" placeholder="Имя" />
+                    <input id="name" class="content__input content__input_name" type="text" placeholder="Имя" />
                     <label class="content__recipient-label">Имя</label>
                     <span class="content__recipient-error content__recipient-error_name"></span>
                 </div>
                 <div class="content__recipient-date">
-                    <input class="content__input content__input_surname" type="text" placeholder="Фамилия"/>
+                    <input id="surname" class="content__input content__input_surname" type="text" placeholder="Фамилия"/>
                     <label class="content__recipient-label">Фамилия</label>
                     <span class="content__recipient-error content__recipient-error_surname"></span>
                 </div>
             </div>
             <div class="content__recipient-block">
                 <div class="content__recipient-date">
-                    <input class="content__input content__input_email" type="email" placeholder="Почта"/>
+                    <input id="email" class="content__input content__input_email" type="email" placeholder="Почта"/>
                     <label class="content__recipient-label">Почта</label>
                     <span class="content__recipient-error content__recipient-error_email"></span>
                 </div>
                 <div class="content__recipient-date">
-                    <input class="content__input content__input_phone"
+                    <input id="phone" class="content__input content__input_phone"
                      type="tel" 
                      placeholder="Телефон" 
                      maxlength="30" 
@@ -283,7 +293,7 @@
                     <span class="content__recipient-error content__recipient-error_phone"></span>
                 </div>
                 <div class="content__recipient-date">
-                    <input class="content__input content__input_number" type="email" placeholder="ИНН"/>
+                    <input id="number" class="content__input content__input_number" type="email" placeholder="ИНН"/>
                     <label class="content__recipient-label">ИНН</label>
                     <span class="content__recipient-error content__recipient-span">Для таможенного оформления</span>
                 </div>

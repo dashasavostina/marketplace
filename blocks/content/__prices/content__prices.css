@@ -1,9 +1,13 @@
 .content__prices {
     display: flex;
+    position: relative;
 }
+
 
 @media screen and (max-width: 951px) {
     .content__prices {
    align-self: baseline;
     }
   }
+
+
