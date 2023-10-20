@@ -1,7 +1,7 @@
 .content__item-options {
     display: grid;
     grid-template-columns: repeat(2, 110px);
-    column-gap: 16px;
+    column-gap: 6px;
 }
 
 @media screen and (max-width: 951px) {

@@ -1,8 +1,8 @@
 .content__template-items {
-    padding-top: 12px;
+    padding-top: 13px;
     display: flex;
     flex-direction: column;
-    row-gap: 20px;
+    row-gap: 33px;
 }
 
 @media screen and (max-width: 951px) {

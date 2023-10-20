@@ -1,6 +1,5 @@
 .cost-form__cards {
     display: flex;
-    margin-top: 4px;
     column-gap: 8px;
     padding-bottom: 12px;
 }
