@@ -389,7 +389,7 @@ totalDiscount.textContent = parseInt(totalSum())  - parseInt(totalOldSum());
       totalDiscount.textContent = parseInt(totalSum())  - parseInt(totalOldSum());
       totalQuantity();
       updateCounterTrash();
-     
+      imagePosition();
     });
   return product;
 };
@@ -565,12 +565,17 @@ if (count.textContent <= 9) {
       count.textContent = 184;
         positionNewElement.appendChild(image);
         positionNewElement.appendChild(countNew);
-        
+        if (countNew.textContent <= 9) {
+          countNew.classList.add('content__img-icon_circle');
+        }
 deliveryItemsContainerLater.appendChild(positionNewElement);
 document.querySelector('.content__delivery-text-position_later').classList.remove('none');
       }
     }
   });
+  if (selectedPositions.length === 0) {
+    document.querySelector('.content__delivery-dates').classList.add('none');
+  }
 }
 
 // функция отображения кол-ва товара на иконке корзины
