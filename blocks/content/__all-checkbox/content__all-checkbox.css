@@ -4,3 +4,9 @@
     display: flex;
     justify-content: space-between;
 }
+
+@media screen and (max-width: 951px) {
+    .content__all-checkbox {
+      padding-bottom: 18px;
+    }
+  }

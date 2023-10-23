@@ -16,3 +16,9 @@
     background-size: 100%;
     margin-right: 8px;
 }
+
+@media screen and (max-width: 951px) {
+  .content__free-delivery:before {
+    margin-right: 16px;
+  }
+}

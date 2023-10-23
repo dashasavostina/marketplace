@@ -6,6 +6,12 @@
     column-gap: 32px;
 }
 
+@media screen and (max-width: 1100px) {
+  .header {
+padding: 18px 9px 18px 24px;
+  }
+}
+
 @media screen and (max-width: 951px) {
   .header {
 display: none;
@@ -191,13 +197,12 @@ display: block;
 .header__logo-mobile {
   color: #FFF;
 
-font-size: 26px;
+font-size: 29px;
 
 font-weight: 600;
-line-height: 0.92;
+line-height: 0.6;
 font-variant: all-small-caps;
-letter-spacing: 0.52px;
-padding-bottom: 7px;
+letter-spacing: 2.3px;
 transition: 0.5s ease-in-out;
 }
 

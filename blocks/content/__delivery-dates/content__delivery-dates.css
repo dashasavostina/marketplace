@@ -5,3 +5,9 @@
     flex-direction: column;
     row-gap: 14px;
 }
+
+@media screen and (max-width: 951px) {
+    .content__delivery-dates {
+      row-gap: 23px;
+    }
+  }

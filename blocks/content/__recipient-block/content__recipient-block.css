@@ -1,12 +1,14 @@
 .content__recipient-block {
     display: flex;
     column-gap: 24px;
-    width: 700px;
+    max-width: 700px;
 }
 
 @media screen and (max-width: 951px) {
     .content__recipient-block {
       flex-direction: column;
       width: 100%;
+      row-gap: 16px;
+      padding-bottom: 16px;
     }
   }

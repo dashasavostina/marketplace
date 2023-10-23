@@ -3,7 +3,16 @@
     border-radius: 24px;
     padding: 0 24px;
     padding-bottom: 52px;
+  
 }
+
+@media screen and (max-width: 1400px) {
+  .content {
+    max-width: 100%;
+  }
+}
+
+
 
 @media screen and (max-width: 951px) {
     .content {

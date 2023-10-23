@@ -9,6 +9,12 @@
   color: #000;
 }
 
+@media screen and (max-width: 951px) {
+  .content__label-check {
+    line-height: 1;
+  }
+}
+
 .content__label-check input[type="checkbox"] {
   position: absolute;
   z-index: -1;

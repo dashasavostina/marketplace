@@ -2,3 +2,9 @@
     display: flex;
     column-gap: 32px;
     }
+
+    @media screen and (max-width: 951px) {
+        .content__delivery-position {
+          flex-direction: column;
+        }
+      }

@@ -1,3 +1,13 @@
 .content__checkbox-span {
     margin-right: 30px;
 }
+
+@media screen and (max-width: 1025px) {
+    .content__checkbox-span {
+      margin-right: 34px;
+    }
+  }
+
+  .content__checkbox-span_pay {
+    margin-right: 30px;
+  }

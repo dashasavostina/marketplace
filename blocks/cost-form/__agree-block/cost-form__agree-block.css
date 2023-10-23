@@ -10,3 +10,10 @@
   width: 17px;
   height: 24px;
 }
+
+
+@media screen and (max-width: 1216px) and (min-width: 951px) {
+  .cost-form__agree-block:before {
+    width: 24px;
+  }
+}

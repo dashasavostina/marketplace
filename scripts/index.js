@@ -309,6 +309,8 @@ function createProduct(products) {
   if (!products.size) {
     product.querySelector('.content__img-size').style.display = "none";
     product.querySelector('.content__text-description_size').style.display = "none";  }
+    if (!products.size && !products.color) {
+      product.querySelector('.content__item-description').style.display = "none";  }
   productSizeMobile.textContent = products.size;
   productPrice.textContent = products.price;
   productOldPrice.textContent = products.oldPrice;
@@ -354,7 +356,7 @@ totalDiscount.textContent = parseInt(totalSum())  - parseInt(totalOldSum());
   });
   const buttonMinus = product.querySelector('.content__counter-button_minus');
   buttonMinus.addEventListener('click', () => {
-    if (productResultCount.value < 1) {
+    if (productResultCount.value < 2) {
       buttonMinus.disabled = true;
     } else {
       buttonMinus.disabled = false;

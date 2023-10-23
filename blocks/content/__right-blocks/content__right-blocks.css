@@ -10,11 +10,7 @@
     }
   }
 
-  @media screen and (max-width: 1003px) {
-    .content__right-blocks {
-      max-width: 250px;
-    }
-  }
+
 
   @media screen and (max-width: 951px) {
     .content__right-blocks {
