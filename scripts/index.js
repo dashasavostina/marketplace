@@ -550,7 +550,9 @@ function imagePosition() {
  if (index === 1 && counters[index].value <= 184) {
   document.querySelector('.content__delivery-text-position_later').classList.add('none');
  }     
-
+if (count.textContent <= 9) {
+  count.classList.add('content__img-icon_circle');
+}
       if (index === 1 && counters[index].value > 184) {
         const positionNewElement = document.createElement('li');
         positionNewElement.classList.add('content__delivery-item');

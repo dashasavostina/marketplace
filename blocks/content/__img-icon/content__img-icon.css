@@ -18,3 +18,8 @@
   align-items: center;
   justify-content: center;
 }
+
+.content__img-icon_circle {
+  border-radius: 50%;
+  padding: 0;
+}
